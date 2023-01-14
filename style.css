@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #1E1E1E;
+}
+
+#headerLogoImg {
+    width: 164px;
+    margin-left: 55px;
+    margin-top: 42px;
+}
+
+.dnc-cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dnc-cadastro h1 {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+
+    color: #FFFFFF;
+    margin-top: 27px;
+    margin-bottom: 43px;
+}
+
+.cadastro-form-div {
+    display: flex;
+    flex-direction: column;
+    width: 524px;
+    margin-bottom: 6px;
+}
+
+.cadastro-form label {
+    font-family: 'Raleway';
+    font-style: normal;
+    /* font-weight: 600; */
+    font-size: 20px;
+    /* line-height: 23px; */
+    margin-bottom: 8px;
+    color: #FFFFFF;
+}
+
+.cadastro-form input {
+    /* Altura caixa e distanciamento texto */
+    height: 52px;
+    padding-left: 13px;
+    /* Configuração cores e linhas caixa */
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #181818;
+    border-radius: 10px;
+    /* Configuração texto */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #616161;
+}
+
+.cadastro-form #alerta-campo-obrigatorio p {
+    text-align: right;
+    font-family: 'Raleway';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 12px;
+    /* line-height: 14px; */
+    color: #E73550;
+}
+
+.cadastro-form button {
+    /* Altura caixa e distanciamento */
+    margin-top: 26px;
+    width: 524px;
+    height: 48px;
+    /* Configuração cores e linhas caixa */
+    background: #0C70F2;
+    border-radius: 6px;
+    border: none;
+    /* Configuração texto */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#alerta-campo-obrig-cad p {
+    margin-top: 8px;
+    font-family: 'Raleway';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 12px;
+    /* line-height: 14px; */
+    color: #E73550;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page | Jumpy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Logo DNC -->
+    <div id="headerLogoImg">
+        <img src="logo-dnc.svg" alt="Logo DNC">
+    </div>
+
+    <div class="dnc-cadastro">
+
+        <!-- Logo Jumpy -->
+        <img src="logo-jumpy.svg" alt="Logo Jumpy">
+
+        <h1>Bem vindo ao Jumpy!</h1>
+
+        <div class="cadastro-form">
+
+            <!-- Nome Completo -->
+            <div class="cadastro-form-div" id="nomeCompleto">
+                <label>Nome Completo:</label>
+                <input type="text" placeholder="Nome Completo" required>
+                <div id="alerta-campo-obrigatorio">
+                    <p>*Campo Obrigatório*</p>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="cadastro-form-div" id="eMail">
+                <label>Email:</label>
+                <input type="email" placeholder="Email@email.com" required>
+                <div id="alerta-campo-obrigatorio">
+                    <p>*Campo Obrigatório*</p>
+                </div>
+            </div>
+
+            <!-- Telefone -->
+            <div class="cadastro-form-div" id="phone">
+                <label>Telefone:</label>
+                <input type="tel" placeholder="(00) 00000-0000" required>
+            </div>
+
+            <!-- CPF -->
+            <div class="cadastro-form-div" id="cpf">
+                <label>CPF:</label>
+                <input type="text" placeholder="000.000.000-00" required>
+            </div>
+
+            <!-- Senha -->
+            <div class="cadastro-form-div" id="senha">
+                <label>Senha:</label>
+                <input type="password" placeholder="*******************" required>
+            </div>
+
+            <!-- Botão cadastro -->
+            <button id="botaoCadastroDNC">Cadastrar</button>
+
+            <div id="alerta-campo-obrig-cad">
+                <p>Campos obrigatórios não registrados.</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
