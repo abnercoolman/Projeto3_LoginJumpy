@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page | Jumpy</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -26,27 +27,23 @@
         <div class="cadastro-form">
 
             <!-- Nome Completo -->
-            <div class="cadastro-form-div" id="nomeCompleto">
+            <div class="cadastro-form-div">
                 <label>Nome Completo:</label>
-                <input type="text" placeholder="Nome Completo" required>
-                <div id="alerta-campo-obrigatorio">
-                    <p>*Campo Obrigatório*</p>
-                </div>
+                <input type="text" placeholder="Nome Completo" id="nomeCompleto" required>
+                <p id="obg-field-name">*Campo Obrigatório*</p> <!-- *Campo Obrigatório* -->
             </div>
 
             <!-- Email -->
-            <div class="cadastro-form-div" id="eMail">
+            <div class="cadastro-form-div">
                 <label>Email:</label>
-                <input type="email" placeholder="Email@email.com" required>
-                <div id="alerta-campo-obrigatorio">
-                    <p>*Campo Obrigatório*</p>
-                </div>
+                <input type="email" id="eMail" placeholder="Email@email.com" required>
+                <p id="obg-field-email">*Campo Obrigatório*</p> <!-- *Campo Obrigatório* -->
             </div>
 
             <!-- Telefone -->
             <div class="cadastro-form-div" id="phone">
                 <label>Telefone:</label>
-                <input type="tel" placeholder="(00) 00000-0000" required>
+                <input type="tel" placeholder="(00)00000-0000" required>
             </div>
 
             <!-- CPF -->
@@ -62,15 +59,12 @@
             </div>
 
             <!-- Botão cadastro -->
-            <button id="botaoCadastroDNC">Cadastrar</button>
+            <button id="botaoCadastroDNC" onclick="validaCadastro()">Cadastrar</button>
 
-            <div id="alerta-campo-obrig-cad">
-                <p>Campos obrigatórios não registrados.</p>
-            </div>
+            <p id="alerta-campo-obrig-cad"></p>
 
         </div>
     </div>
-
 </body>
 
 </html>

@@ -5,6 +5,11 @@
     padding: 0;
 }
 
+:root {
+    --red-alert: #E73550;
+    --green-alert: #0F7B0F;
+}
+
 body {
     background: #1E1E1E;
 }
@@ -67,16 +72,6 @@ body {
     color: #616161;
 }
 
-.cadastro-form #alerta-campo-obrigatorio p {
-    text-align: right;
-    font-family: 'Raleway';
-    font-style: normal;
-    /* font-weight: 400; */
-    font-size: 12px;
-    /* line-height: 14px; */
-    color: #E73550;
-}
-
 .cadastro-form button {
     /* Altura caixa e distanciamento */
     margin-top: 26px;
@@ -99,12 +94,34 @@ button:hover {
     cursor: pointer;
 }
 
-#alerta-campo-obrig-cad p {
-    margin-top: 8px;
+#obg-field-name {
+    visibility: hidden;
+    text-align: right;
     font-family: 'Raleway';
     font-style: normal;
     /* font-weight: 400; */
     font-size: 12px;
     /* line-height: 14px; */
-    color: #E73550;
+    color: var(--red-alert);
+}
+
+#obg-field-email {
+    visibility: hidden;
+    text-align: right;
+    font-family: 'Raleway';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 12px;
+    /* line-height: 14px; */
+    color: var(--red-alert);
+}
+
+#alerta-campo-obrig-cad {
+    margin-top: 8px;
+    margin-bottom: 57px;
+    font-family: 'Raleway';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 12px;
+    /* line-height: 14px; */
 }
