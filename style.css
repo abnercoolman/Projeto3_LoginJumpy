@@ -72,6 +72,33 @@ body {
     color: #616161;
 }
 
+#showSenha_campoObg{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2px;
+        height: 15px;
+}
+
+#id_MostrarSenha{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+#id_MostrarSenha p{
+    margin-left: 5px;
+    text-align: left;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: #FFFFFF;
+}
+
 .cadastro-form button {
     /* Altura caixa e distanciamento */
     margin-top: 26px;
@@ -106,6 +133,39 @@ button:hover {
 }
 
 #obg-field-email {
+    visibility: hidden;
+    text-align: right;
+    font-family: 'Raleway';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 12px;
+    /* line-height: 14px; */
+    color: var(--red-alert);
+}
+
+#obg-field-tel {
+    visibility: hidden;
+    text-align: right;
+    font-family: 'Raleway';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 12px;
+    /* line-height: 14px; */
+    color: var(--red-alert);
+}
+
+#obg-field-cpf {
+    visibility: hidden;
+    text-align: right;
+    font-family: 'Raleway';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 12px;
+    /* line-height: 14px; */
+    color: var(--red-alert);
+}
+
+#obg-field-pass {
     visibility: hidden;
     text-align: right;
     font-family: 'Raleway';

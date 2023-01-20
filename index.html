@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page | Jumpy</title>
-    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -29,42 +29,54 @@
             <!-- Nome Completo -->
             <div class="cadastro-form-div">
                 <label>Nome Completo:</label>
-                <input type="text" placeholder="Nome Completo" id="nomeCompleto" required>
+                <input type="text" placeholder="Nome Completo" id="nomeCompleto">
                 <p id="obg-field-name">*Campo Obrigatório*</p> <!-- *Campo Obrigatório* -->
             </div>
 
             <!-- Email -->
             <div class="cadastro-form-div">
                 <label>Email:</label>
-                <input type="email" id="eMail" placeholder="Email@email.com" required>
+                <input type="email" id="eMail" placeholder="Email@email.com">
                 <p id="obg-field-email">*Campo Obrigatório*</p> <!-- *Campo Obrigatório* -->
             </div>
 
             <!-- Telefone -->
             <div class="cadastro-form-div" id="phone">
                 <label>Telefone:</label>
-                <input type="tel" placeholder="(00)00000-0000" required>
+                <input id="id_phone" onkeypress="maskTel()" type="text" autocomplete="off" placeholder="(00)00000-0000"
+                    maxlength="14">
+                <p id="obg-field-tel">*Campo Obrigatório*</p> <!-- *Campo Obrigatório* -->
             </div>
 
             <!-- CPF -->
             <div class="cadastro-form-div" id="cpf">
                 <label>CPF:</label>
-                <input type="text" placeholder="000.000.000-00" required>
+                <input id="id_cpf" type="text" onkeypress="maskCpf()" placeholder="000.000.000-00" maxlength="14">
+                <p id="obg-field-cpf">*Campo Obrigatório*</p> <!-- *Campo Obrigatório* -->
             </div>
 
             <!-- Senha -->
             <div class="cadastro-form-div" id="senha">
                 <label>Senha:</label>
-                <input type="password" placeholder="*******************" required>
+                <input type="password" placeholder="*******************" maxlength="19" id="inputPassword">
+
+                <div id="showSenha_campoObg">
+                    <div id="id_MostrarSenha">
+                        <input type="checkbox" onclick="showPass()">
+                        <p>Mostrar senha</p>
+                    </div>
+                    <p id="obg-field-pass">*Campo Obrigatório*</p> <!-- *Campo Obrigatório* -->
+                </div>
+
             </div>
 
             <!-- Botão cadastro -->
             <button id="botaoCadastroDNC" onclick="validaCadastro()">Cadastrar</button>
-
             <p id="alerta-campo-obrig-cad"></p>
 
         </div>
     </div>
+
 </body>
 
 </html>
