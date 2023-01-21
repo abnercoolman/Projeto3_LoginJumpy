@@ -72,16 +72,16 @@ body {
     color: #616161;
 }
 
-#showSenha_campoObg{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 2px;
-        height: 15px;
+#showSenha_campoObg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2px;
+    height: 15px;
 }
 
-#id_MostrarSenha{
+#id_MostrarSenha {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -89,7 +89,7 @@ body {
     margin-top: 0;
 }
 
-#id_MostrarSenha p{
+#id_MostrarSenha p {
     margin-left: 5px;
     text-align: left;
     font-family: 'Raleway';
@@ -184,4 +184,52 @@ button:hover {
     /* font-weight: 400; */
     font-size: 12px;
     /* line-height: 14px; */
+}
+
+@media (max-width: 600px) {
+
+    body {
+        width: 100%;
+    }
+
+    #headerLogoImg img {
+        height: 60px;
+        width: 100px;
+        margin-left: 4%;
+        margin-top: 5%;
+    }
+
+    .dnc-cadastro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dnc-cadastro img {
+        width: 80%;
+        margin-left: 4%;
+        margin-top: 5%;
+        /* align-items: center; */
+    }
+
+    .dnc-cadastro h1 {
+        font-size: 30px;
+    }
+
+    .cadastro-form {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cadastro-form-div {
+        width: 80%;
+    }
+
+    .cadastro-form button {
+        width: 80%;
+    }
 }
